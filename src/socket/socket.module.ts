@@ -5,7 +5,7 @@ import { io, Socket } from 'socket.io-client';
     providers: [SocketModule]
 })
 export class SocketModule implements OnModuleInit {
-    socketClient: Socket;
+    public socketClient: Socket;
 
     constructor() {
         this.socketClient = io('http://localhost:3000')
